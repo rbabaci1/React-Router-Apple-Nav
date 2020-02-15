@@ -9,7 +9,7 @@ export default function ProductCard({ item, productIcon }) {
         {productIcon}
       </span>
       <p>{item.name}</p>
-      <p style={{ color: "#f56300" }}>{item.new ? "New" : null}</p>
+      <p style={{ color: "#f56300" }}>{item.new && "New"}</p>
     </div>
   );
 }

@@ -35,7 +35,7 @@ export default function Home({ products, history }) {
 
       <Route
         path={`/:category/:itemId`}
-        render={props => <Item {...props} />}
+        render={props => <Item {...props} products={products} />}
       />
     </div>
   );

@@ -1,12 +1,15 @@
 import React from "react";
 
-export default function Item(props) {
-  console.log(props);
-  //{ match, categoryItems }
-  //   const selectedItem = match.params.itemId;
-  //   const item = categoryItems.find(item => item.name === selectedItem);
-  //   //   console.log(categoryItems);
-  //   console.log(selectedItem);
-  //   console.log(item);
-  return <h1 style={{ color: "white" }}>item</h1>;
+export default function Item({ match, products }) {
+  const selectedCategory = match.params.category;
+  const category = products.find(product => product.name === selectedCategory);
+  const itemBg = {
+    backgroundImage: `url(${category.imageUrl})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    height: "95vh"
+  };
+
+  return <section style={itemBg}></section>;
 }

@@ -3,8 +3,10 @@ const productData = [
     id: 1,
     name: "Mac",
     productIcon: "🖥️",
+    imageUrl:
+      "https://images.unsplash.com/photo-1517162024945-595ae6bca1a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
     repository: [
-      { id: 1, name: "MacBook Air", new: false },
+      { id: 1, name: "MacBookAir", new: false },
       { id: 2, name: 'MacBook Pro 13"', new: false },
       { id: 3, name: 'MacBook Pro 16"', new: true },
       { id: 4, name: "iMac", new: false },
@@ -21,6 +23,8 @@ const productData = [
     id: 2,
     name: "iPad",
     productIcon: "📱",
+    imageUrl:
+      "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     repository: [
       { id: 1, name: "iPad Pro", new: false },
       { id: 2, name: "iPad Air", new: false },
@@ -38,6 +42,8 @@ const productData = [
     id: 3,
     name: "iPhone",
     productIcon: "📱",
+    imageUrl:
+      "https://images.unsplash.com/photo-1580466931754-def27bb0f188?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     repository: [
       { id: 1, name: "iPhone 11 Pro", new: true },
       { id: 2, name: "iPhone11", new: true },
@@ -54,6 +60,8 @@ const productData = [
     id: 4,
     name: "Watch",
     productIcon: "⌚️",
+    imageUrl:
+      "https://images.unsplash.com/photo-1519315910113-861dcfbfb9cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     repository: [
       { id: 1, name: "Apple Watch Series 5", new: true },
       { id: 2, name: "Apple Watch Nike", new: true },
@@ -71,6 +79,8 @@ const productData = [
     id: 5,
     name: "TV",
     productIcon: "📺",
+    imageUrl:
+      "https://images.unsplash.com/photo-1515703817793-511cee221bb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     repository: [
       { id: 1, name: "Apple TV+", new: true },
       { id: 2, name: "Apple TV app", new: true },
@@ -84,6 +94,8 @@ const productData = [
     id: 6,
     name: "Music",
     productIcon: "🎹",
+    imageUrl:
+      "https://images.unsplash.com/photo-1520390244437-6f1c5eae66ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80",
     repository: [
       { id: 1, name: "Apple Music", new: false },
       { id: 2, name: "AirPods Pro", new: true },
