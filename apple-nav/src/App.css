@@ -6,10 +6,6 @@
   background-position: center;
 }
 
-.wrapper {
-  background: #191818;
-}
-
 .logo {
   color: #fff;
   font-size: 24px;
@@ -21,6 +17,10 @@
 }
 
 .nav-wrapper {
+  background: #191818;
+}
+
+.nav {
   display: flex;
   justify-content: space-between;
   max-width: 980px;
@@ -29,14 +29,14 @@
   align-items: center;
 }
 
-.nav-wrapper a {
+.nav a {
   text-decoration: none;
   color: #dbdbdf;
   font-weight: 500;
   font-size: 15px;
 }
 
-.nav-wrapper a:hover {
+.nav a:hover {
   transition: 0.7s;
   color: #fff;
 }

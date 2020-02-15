@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 
 export default function Repository({ products, match }) {
   const SelectedCategory = match.params.category;
@@ -7,7 +7,7 @@ export default function Repository({ products, match }) {
 
   return (
     <div>
-      <h1>{category.name} Selected</h1>
+      <h1 style={{ color: "white" }}>{category.name} Selected</h1>
     </div>
   );
 }
