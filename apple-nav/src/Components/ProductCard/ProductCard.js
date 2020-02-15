@@ -1,5 +1,14 @@
 import React from "react";
 
-export default function ProductCard(props) {
-  return <h1>test</h1>;
+import "./productCard.css";
+
+export default function ProductCard({ item, productIcon }) {
+  return (
+    <div className="item-card">
+      <span role="img" aria-label="product icon">
+        {productIcon}
+      </span>
+      <p>{item.name}</p>
+    </div>
+  );
 }

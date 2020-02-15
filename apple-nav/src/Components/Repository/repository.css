@@ -1,5 +1,14 @@
 .category-products {
     display: flex;
+    justify-content: space-between;
     border: 1px solid red;
-    margin: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-products a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
 }

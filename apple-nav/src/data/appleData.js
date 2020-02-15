@@ -2,7 +2,7 @@ const productData = [
   {
     id: 1,
     name: "Mac",
-    productIcon: "📱",
+    productIcon: "🖥️",
     repository: [
       { id: 1, name: "MacBook Air", new: false },
       { id: 2, name: 'MacBook Pro 13"', new: false },
@@ -53,7 +53,7 @@ const productData = [
   {
     id: 4,
     name: "Watch",
-    productIcon: "📱",
+    productIcon: "⌚️",
     repository: [
       { id: 1, name: "Apple Watch Series 5", new: true },
       { id: 2, name: "Apple Watch Nike", new: true },
@@ -70,7 +70,7 @@ const productData = [
   {
     id: 5,
     name: "TV",
-    productIcon: "📱",
+    productIcon: "📺",
     repository: [
       { id: 1, name: "Apple TV+", new: true },
       { id: 2, name: "Apple TV app", new: true },
@@ -83,7 +83,7 @@ const productData = [
   {
     id: 6,
     name: "Music",
-    productIcon: "📱",
+    productIcon: "🎹",
     repository: [
       { id: 1, name: "Apple Music", new: false },
       { id: 2, name: "AirPods Pro", new: true },

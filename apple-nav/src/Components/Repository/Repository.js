@@ -7,16 +7,13 @@ import ProductCard from "../ProductCard/ProductCard";
 export default function Repository({ products, match }) {
   const selectedCategory = match.params.category;
   const category = products.find(product => product.name === selectedCategory);
-  const productIcon = "📱";
+  const productIcon = category.productIcon;
 
   return (
     <div className="category-products">
-      <span role="img" aria-label="iphone symbol">
-        {productIcon}
-      </span>
       {category.repository.map(item => (
         <NavLink to={`${match.url}/${item.name}`} key={item.id}>
-          <ProductCard item={item} />
+          <ProductCard item={item} productIcon={productIcon} />
         </NavLink>
       ))}
     </div>
