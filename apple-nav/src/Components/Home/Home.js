@@ -1,8 +1,9 @@
 import React from "react";
 import { Route, NavLink } from "react-router-dom";
 
-import Repository from "./Repository";
-import Item from "./Item";
+import "../Home/home.css";
+import Repository from "../Repository/Repository";
+import Item from "../Item/Item";
 
 export default function Home({ products }) {
   return (

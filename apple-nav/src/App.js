@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 
 import "./App.css";
 import appleData from "./data/appleData";
-import Home from "./Components/Home";
+import Home from "./Components/Home/Home";
 
 function App() {
   const [products] = useState(appleData);
