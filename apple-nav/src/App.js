@@ -10,7 +10,10 @@ function App() {
 
   return (
     <div className="App">
-      <Route path="/" render={() => <Home products={products} />} />
+      <Route
+        path="/"
+        render={props => <Home {...props} products={products} />}
+      />
     </div>
   );
 }

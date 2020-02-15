@@ -12,3 +12,8 @@
     font-weight: 500;
     font-size: 12px;
 }
+
+.category-products a:hover {
+    transition: 0.2s;
+    color: #0070c9;
+}

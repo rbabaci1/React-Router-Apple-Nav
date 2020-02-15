@@ -5,12 +5,14 @@ import "../Home/home.css";
 import Repository from "../Repository/Repository";
 import Item from "../Item/Item";
 
-export default function Home({ products }) {
+export default function Home({ products, history }) {
   return (
     <div className="wrapper">
       <div className="nav-wrapper">
         <div className="nav">
-          <p className="logo">{"\uf8ff"}</p>
+          <p className="logo" onClick={() => history.push("/")}>
+            {"\uf8ff"}
+          </p>
           {products.map(product => (
             <NavLink to={`/${product.name}`} key={product.id}>
               {product.name}
