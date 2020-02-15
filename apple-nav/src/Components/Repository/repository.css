@@ -1,7 +1,13 @@
+.category-wrap {
+    background: #111111;
+    height: 130px
+}
+
 .category-products {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
+    height: 130px;
     margin: 0 auto;
 }
 

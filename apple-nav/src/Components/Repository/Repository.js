@@ -10,12 +10,14 @@ export default function Repository({ products, match }) {
   const productIcon = category.productIcon;
 
   return (
-    <div className="category-products">
-      {category.repository.map(item => (
-        <NavLink to={`${match.url}/${item.name}`} key={item.id}>
-          <ProductCard item={item} productIcon={productIcon} />
-        </NavLink>
-      ))}
+    <div className="category-wrap">
+      <div className="category-products">
+        {category.repository.map(item => (
+          <NavLink to={`${match.url}/${item.name}`} key={item.id}>
+            <ProductCard item={item} productIcon={productIcon} />
+          </NavLink>
+        ))}
+      </div>
     </div>
   );
 }

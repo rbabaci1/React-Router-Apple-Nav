@@ -10,10 +10,6 @@
     font-size: 14px;
 }
 
-.nav-wrapper {
-    background: #191818;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
