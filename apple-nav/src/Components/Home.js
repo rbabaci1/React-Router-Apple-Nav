@@ -7,8 +7,12 @@ export default function Home({ products }) {
   return (
     <div className="nav-wrapper">
       {products.map(product => (
-        <h2>{product.name}</h2>
+        <NavLink to={`/products/${product.name}`}>
+          <h2>{product.name}</h2>
+        </NavLink>
       ))}
+
+      <Route path="/products/:id" />
     </div>
   );
 }
