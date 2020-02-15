@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 
+import Item from "./Item";
+
 export default function Repository({ products, match }) {
   console.log(match);
   const selectedCategory = match.params.category;
@@ -17,7 +19,7 @@ export default function Repository({ products, match }) {
         ))}
       </div>
 
-      <Route path={`/${selectedCategory}/:itemId`} />
+      <Route path={`/${selectedCategory}/:itemId`} render={props => null} />
     </div>
   );
 }
