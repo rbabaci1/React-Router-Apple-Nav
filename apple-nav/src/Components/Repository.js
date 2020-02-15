@@ -1,13 +1,9 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
-
-import Item from "./Item";
+import { Link } from "react-router-dom";
 
 export default function Repository({ products, match }) {
-  console.log(match);
   const selectedCategory = match.params.category;
   const category = products.find(product => product.name === selectedCategory);
-  console.log(category);
 
   return (
     <div>
@@ -18,8 +14,6 @@ export default function Repository({ products, match }) {
           </Link>
         ))}
       </div>
-
-      <Route path={`/${selectedCategory}/:itemId`} render={props => null} />
     </div>
   );
 }
