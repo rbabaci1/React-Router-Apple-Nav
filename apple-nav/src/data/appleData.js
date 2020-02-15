@@ -42,9 +42,9 @@ const productData = [
       { id: 4, name: "iPhone 8", new: false },
       { id: 5, name: "Compare", new: false },
       { id: 6, name: "Apple Card", new: false },
-      { id: 8, name: "AirPods", new: true },
-      { id: 9, name: "Accessories", new: false },
-      { id: 10, name: "iOS 13", new: false }
+      { id: 7, name: "AirPods", new: true },
+      { id: 8, name: "Accessories", new: false },
+      { id: 9, name: "iOS 13", new: false }
     ]
   },
   {
@@ -57,9 +57,9 @@ const productData = [
       { id: 4, name: "Apple Watch Edition", new: true },
       { id: 5, name: "Apple Watch Series 3", new: false },
       { id: 6, name: "Compare", new: false },
-      { id: 8, name: "Bands", new: false },
-      { id: 9, name: "AirPods", new: true },
-      { id: 10, name: "Accessories", new: false },
+      { id: 7, name: "Bands", new: false },
+      { id: 8, name: "AirPods", new: true },
+      { id: 9, name: "Accessories", new: false },
       { id: 10, name: "WatchOS", new: false }
     ]
   },
@@ -72,11 +72,11 @@ const productData = [
       { id: 3, name: "Apple TV 4K", new: false },
       { id: 4, name: "Apple TV HD", new: false },
       { id: 5, name: "AirPlay", new: false },
-      { id: 10, name: "Accessories", new: false }
+      { id: 6, name: "Accessories", new: false }
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: "Music",
     repository: [
       { id: 1, name: "Apple Music", new: false },
@@ -84,8 +84,8 @@ const productData = [
       { id: 3, name: "AirPods", new: false },
       { id: 4, name: "HomePod", new: false },
       { id: 5, name: "iPod touch", new: false },
-      { id: 10, name: "Music Accessories", new: false },
-      { id: 5, name: "Gift Cards", new: false }
+      { id: 6, name: "Music Accessories", new: false },
+      { id: 7, name: "Gift Cards", new: false }
     ]
   }
 ];

@@ -1,3 +1,11 @@
 .nav-wrapper {
   display: flex;
+  justify-content: space-between;
+  background: olivedrab;
+}
+
+.home h1 {
+  background: orange;
+  margin: 15px;
+  font-size: 25px;
 }
