@@ -5,13 +5,20 @@ import Repository from "./Repository";
 
 export default function Home({ products }) {
   return (
-    <div>
+    <div className="wrapper">
       <div className="nav-wrapper">
+        <p className="logo">{"\uf8ff"}</p>
         {products.map(product => (
           <NavLink to={`/${product.name}`} key={product.id}>
-            <h2>{product.name}</h2>
+            {product.name}
           </NavLink>
         ))}
+        <span role="img" aria-label="search icon">
+          🔍
+        </span>
+        <span role="img" aria-label="cart icon">
+          🛒
+        </span>
       </div>
 
       <Route

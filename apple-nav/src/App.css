@@ -1,7 +1,44 @@
+.App {
+  height: 100vh;
+  background-image: url("./images/MacBookBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  background: #191818;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+.search {
+  color: #fff;
+  font-size: 14px;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  background: olivedrab;
+  max-width: 980px;
+  margin: 0 auto;
+  height: 45px;
+  align-items: center;
+}
+
+.nav-wrapper a {
+  text-decoration: none;
+  color: #dbdbdf;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.nav-wrapper a:hover {
+  transition: 0.7s;
+  color: #fff;
 }
 
 .home h1 {
