@@ -2,12 +2,22 @@ import React from "react";
 import { Link, Route } from "react-router-dom";
 
 export default function Repository({ products, match }) {
-  const SelectedCategory = match.params.category;
-  const category = products.find(product => product.name === SelectedCategory);
+  console.log(match);
+  const selectedCategory = match.params.category;
+  const category = products.find(product => product.name === selectedCategory);
+  console.log(category);
 
   return (
     <div>
-      <h1 style={{ color: "white" }}>{category.name} Selected</h1>
+      <div className="category-products">
+        {category.repository.map(item => (
+          <Link to={`${match.url}/${item.name}`} key={item.id}>
+            {item.name}
+          </Link>
+        ))}
+      </div>
+
+      <Route path={`/${selectedCategory}/:itemId`} />
     </div>
   );
 }
