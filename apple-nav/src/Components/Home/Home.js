@@ -14,7 +14,11 @@ export default function Home({ products, history }) {
             {"\uf8ff"}
           </p>
           {products.map(product => (
-            <NavLink to={`/${product.name}`} key={product.id}>
+            <NavLink
+              to={`/${product.name}`}
+              key={product.id}
+              activeClassName="selected"
+            >
               {product.name}
             </NavLink>
           ))}

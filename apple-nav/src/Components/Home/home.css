@@ -2,6 +2,7 @@
     color: #fff;
     font-size: 24px;
     cursor: pointer;
+    margin: 0;
 }
 
 .search {
@@ -18,7 +19,6 @@
     justify-content: space-between;
     max-width: 980px;
     margin: 0 auto;
-    height: 45px;
     align-items: center;
 }
 
@@ -27,9 +27,15 @@
     color: #dbdbdf;
     font-weight: 500;
     font-size: 15px;
+    padding: 12px 22px;
 }
 
 .nav a:hover {
     transition: 0.7s;
     color: #fff;
+}
+
+.selected {
+    background: #2e2c2b;
+    color: rgb(245, 99, 0)!important;
 }
