@@ -13,6 +13,7 @@ export default function Home({ products, history }) {
           <p className="logo" onClick={() => history.push("/")}>
             {"\uf8ff"}
           </p>
+
           {products.map(product => (
             <NavLink
               to={`/${product.name}`}
@@ -22,6 +23,7 @@ export default function Home({ products, history }) {
               {product.name}
             </NavLink>
           ))}
+
           <span role="img" aria-label="search icon">
             🔍
           </span>
@@ -38,7 +40,7 @@ export default function Home({ products, history }) {
       />
 
       <Route
-        path={`/:category/:itemId`}
+        path={`/:category/:item`}
         render={props => <Item {...props} products={products} />}
       />
     </div>

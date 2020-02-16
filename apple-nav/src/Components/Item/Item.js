@@ -3,7 +3,8 @@ import React from "react";
 export default function Item({ match, products }) {
   const selectedCategory = match.params.category;
   const category = products.find(product => product.name === selectedCategory);
-  const itemBg = {
+
+  const itemBgImage = {
     backgroundImage: `url(${category.imageUrl})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
@@ -11,5 +12,5 @@ export default function Item({ match, products }) {
     height: "95vh"
   };
 
-  return <section style={itemBg}></section>;
+  return <div style={itemBgImage}></div>;
 }
