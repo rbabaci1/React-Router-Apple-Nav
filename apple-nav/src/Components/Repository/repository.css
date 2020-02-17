@@ -1,24 +1,48 @@
 .category-wrap {
-    background: #111111;
-    height: 130px
+  background: #111111;
+  height: 130px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.4;
+  transition: opacity 150ms linear;
 }
 
 .category-products {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    height: 130px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 130px;
+  margin: 0 auto;
 }
 
 .category-products a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .category-products a:hover {
-    transition: 0.2s;
-    color: #0070c9;
+  transition: 0.2s;
+  color: #0070c9;
 }

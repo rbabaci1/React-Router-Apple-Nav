@@ -1,12 +1,12 @@
 .item-card {
-    margin: 15px 20px;
-    text-align: center;
+  margin: 15px 20px;
+  text-align: center;
 }
 
 .item-card span {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .item-card p {
-    margin: 7px 0;
+  margin: 7px 0;
 }
