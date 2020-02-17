@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, NavLink } from "react-router-dom";
+import { Route, NavLink, Switch } from "react-router-dom";
 
 import "../Home/home.css";
 import Repository from "../Repository/Repository";
@@ -33,16 +33,18 @@ export default function Home({ products, history }) {
         </div>
       </div>
 
-      <Route
-        exact
-        path="/:category"
-        render={props => <Repository {...props} products={products} />}
-      />
+      <Switch>
+        <Route
+          exact
+          path="/:category"
+          render={props => <Repository {...props} products={products} />}
+        />
 
-      <Route
-        path={`/:category/:item`}
-        render={props => <Item {...props} products={products} />}
-      />
+        <Route
+          path={`/:category/:item`}
+          render={props => <Item {...props} products={products} />}
+        />
+      </Switch>
     </div>
   );
 }

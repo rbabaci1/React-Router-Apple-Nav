@@ -78,7 +78,7 @@ const productData = [
   {
     id: 5,
     name: "TV",
-    productIcon: "📺",
+    productIcon: "📼",
     imageUrl:
       "https://images.unsplash.com/photo-1515703817793-511cee221bb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
     repository: [
@@ -93,7 +93,7 @@ const productData = [
   {
     id: 6,
     name: "Music",
-    productIcon: "🎹",
+    productIcon: "🎵",
     imageUrl:
       "https://images.unsplash.com/photo-1520390244437-6f1c5eae66ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80",
     repository: [
